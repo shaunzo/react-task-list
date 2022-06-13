@@ -1,0 +1,67 @@
+@import '../../scss/variables';
+
+.todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: #fff;
+    background: linear-gradient(
+      90deg,
+      $colour_9,
+      $colour_10
+    );
+  
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
+
+    &.complete {
+        text-decoration: line-through;
+        opacity: 0.4;
+    }
+
+    &:nth-child(4n + 1) {
+        background: linear-gradient(
+          90deg,
+          $colour_4,
+          $colour_5
+        );
+    }
+
+    &:nth-child(4n + 2) {
+        background: linear-gradient(
+          90deg,
+          $colour_11,
+          $colour_12
+        );
+    }
+
+    &:nth-child(4n + 3) {
+        background: linear-gradient(
+          90deg,
+          $colour_7,
+          $colour_8
+        );
+    }
+
+    .todo-text {
+        cursor: pointer;
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        cursor: pointer;
+
+        .delete-icon {
+            margin-right: 5px;
+            color: #fff;
+        }
+          
+        .edit-icon {
+        color: #fff;
+        }
+    }
+}

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { RiDoorOpenFill } from 'react-icons/ri';
 import TodoForm from '../todo-form/todo-form';
 import Todo from '../todo/todo';
 

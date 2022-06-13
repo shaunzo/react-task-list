@@ -1,0 +1,64 @@
+@import '../../scss/variables';
+
+.todo-form {
+    margin-bottom: 32px;
+
+    .todo-input {
+        padding: 14px 32px 14px 16px;
+        border-radius: 4px 0 0 4px;
+        border: 2px solid $colour_3;
+        outline: none;
+        width: 320px;
+        background: transparent;
+        color: #fff;
+
+        &::placeholder {
+            color: $colour_light;
+        }
+
+        &.edit {
+            border: 2px solid $colour_6;
+        }
+
+        .todo-button {
+            padding: 16px;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            outline: none;
+            background: linear-gradient(
+              90deg,
+              $colour_4,
+              $colour_5
+            );
+            color: #fff;
+            text-transform: capitalize;
+
+            &.edit {
+                background: linear-gradient(
+                  90deg,
+                  $colour_7,
+                  $colour_8
+                );
+                
+                padding: 16px 22px;
+            }
+        }
+
+    }
+
+    .todo-button {
+        padding: 16px;
+        border: none;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+        outline: none;
+        background: linear-gradient(
+          90deg,
+          $colour_4,
+          $colour_5
+        );
+        color: #fff;
+        text-transform: capitalize;
+    }
+}
