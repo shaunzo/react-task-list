@@ -1,16 +1,29 @@
 @import '../../scss/variables';
 
 .todo-form {
-    margin-bottom: 32px;
+    margin-bottom: 32px !important;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 90%;
+
+    @media (min-width: $tablet) {
+        display: block;
+        width: auto;
+    }
 
     .todo-input {
         padding: 14px 32px 14px 16px;
         border-radius: 4px 0 0 4px;
         border: 2px solid $colour_3;
         outline: none;
-        width: 320px;
+        flex-grow: 1;
         background: transparent;
         color: #fff;
+
+        @media (min-width: $tablet) {
+            width: 320px;
+        }
 
         &::placeholder {
             color: $colour_light;

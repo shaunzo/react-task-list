@@ -5,6 +5,8 @@ import { TiEdit } from 'react-icons/ti';
 import './todo.scss';
 
 const Todo = ({todos, completeTodo, removeTodo, updateTodo}) => {
+    const [ removeClass, setRemoveClass ] = useState(false);
+    
     const [edit, setEdit] = useState({
         id: null,
         value: ''
@@ -14,7 +16,8 @@ const Todo = ({todos, completeTodo, removeTodo, updateTodo}) => {
         updateTodo(edit.id, value);
         setEdit({
             id: null,
-            value: ''
+            value: '',
+            hide: false
         });
     }
 
@@ -23,7 +26,7 @@ const Todo = ({todos, completeTodo, removeTodo, updateTodo}) => {
     }
 
     return todos.map((todo, index) => (
-        <div className={todo.isComplete ? 'todo-row complete' : 'todo-row'} key={index}>
+        <div className={todo.isComplete ? 'todo-row complete' : 'todo-row '} key={index}>
             <div className='todo-text' key={todo.id} onClick={() => completeTodo(todo.id)}>
                 {todo.text}
             </div>

@@ -18,6 +18,14 @@
     padding: 16px;
     border-radius: 5px;
     width: 90%;
+    transform: scale(1);
+    opacity: 1;
+    transition: transform ease-in-out 350ms, opacity ease-in-out 350ms;
+
+    &.remove {
+      transform: scale(0);
+      opacity: 0;
+    }
 
     &.complete {
         text-decoration: line-through;
