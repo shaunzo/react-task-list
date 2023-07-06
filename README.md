@@ -1,5 +1,5 @@
 # Demo
-To view a demo [click here] (https://shaunzo.github.io/react-task-list/)
+To view a demo visit: https://shaunzo.github.io/react-task-list/
 
 # Getting Started with Create React App
 
