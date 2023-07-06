@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/github.io/react-task-list/static/css/main.ae5897bf.css",
-    "main.js": "/github.io/react-task-list/static/js/main.bae35aad.js",
-    "index.html": "/github.io/react-task-list/index.html",
-    "main.ae5897bf.css.map": "/github.io/react-task-list/static/css/main.ae5897bf.css.map",
-    "main.bae35aad.js.map": "/github.io/react-task-list/static/js/main.bae35aad.js.map"
+    "main.css": "/react-task-list/static/css/main.ae5897bf.css",
+    "main.js": "/react-task-list/static/js/main.bae35aad.js",
+    "index.html": "/react-task-list/index.html",
+    "main.ae5897bf.css.map": "/react-task-list/static/css/main.ae5897bf.css.map",
+    "main.bae35aad.js.map": "/react-task-list/static/js/main.bae35aad.js.map"
   },
   "entrypoints": [
     "static/css/main.ae5897bf.css",
